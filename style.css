@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@300&family=Lora:wght@700&family=Raleway&display=swap');
+
+:root{
+--color-fondo: #2B2E41;
+--color-sections: #ED7047;
+--menu-navbar: #313445;
+--color-titulos: #FF4B57;
+--color-textos: #f8f8f8;
+--ff-tittle: font-family: 'Bebas Neue';
+--ff-body: font-family: 'Bitter';
+--ff-raleway: font-family: 'Raleway';
+--ff-lora: font-family: 'Lora';
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Sección Menu*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--menu-navbar);
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+
+.logo{
+    font-size: 20px;
+    font-family: 'Raleway';
+    color: var(--color-titulos);
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-family: var(--ff-navbar);
+}
+
+.nav-list li a {
+    color: #F5F5F5;
+    font-family: var(--ff-navbar);
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*Sección Title*/
+.profile{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.profileContent {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--color-fondo);
+}
+
+.profileTittle{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.profileTittle h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-titulos);
+    font-family: 'Raleway';
+    text-align: center;
+}
+.profileTittle p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+.linksProfile{
+    display: flex;
+    gap: 15px;
+}
+
+.linksProfile a img{
+    width: 45px;
+    height: 45px;
+}
+.profileImage{
+    flex: 1; /* Esto hace que este div ocupe el espacio restante */
+}
+
+.profileImage img{
+    width: 100%;
+}
+
+
+/*Sección About*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--menu-navbar);
+    width: 100%;
+    height: 100vh;
+}
+.aboutContainer{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+
+}
+.aboutTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ED7047;
+    font-family: 'Raleway';
+
+}
+
+.aboutParagraph {
+    font-size: 1.3rem;
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+
+/*Section Skills*/
+.skills{
+    background-color: var(--color-fondo);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.skillsLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sectionSkills h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ED7047;
+    font-family: 'Raleway';
+}
+.skillsLine p{
+    font-size: 1.3rem;
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+
+.skillsBox img{
+    width: 60px;
+    margin-top: 20px;
+}
+
+/*Sección Learning*/
+.sectionLearning{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.learningLine{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.learningTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ED7047;
+    font-family: 'Raleway';
+}
+.learningBox img{
+    width: 60px;
+    margin-top: 20px;
+}
+.sectionLearning p{
+    font-size: 1.3rem;
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+/* Experiencia Académica*/
+
+.academic{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--menu-navbar);
+}
+
+.sectionAcademic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+    text-align: center;
+}
+.sectionAcademic h2{
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    color: #ED7047;
+    margin-bottom: 20px;
+}
+.academicCourses{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.academicCoursesBox .academicCoursesList{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-fondo);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.academicCoursesList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Bitter';
+    color: #f8f8f8;
+}
+
+.academicCoursesList img{
+    width: 80px;
+}
+
+
+
+
+/* experiencia*/
+
+
+/*Contacto*/
+/* Sección de Contacto */
+
+.formContacto {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.formContent {
+    display: flex;
+    align-items: center;
+}
+
+
+.formText {
+    width: 50%;
+    justify-content: center;
+    background-color: var(--menu-navbar);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.formText h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ED7047;
+    font-family: var(--ff-raleway);
+}
+
+.formText h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+    font-family: 'Bitter';
+}
+
+.formText form {
+    margin-top: 20px;
+}
+
+.formText input,
+.formText textarea {
+    width: calc(100% - 20px);
+    resize: none;	
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formText .fbtnForm {
+    background-color: #ED7047;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.formText .fbtnForm:hover {
+    background-color: #FF4B57;
+}
+.formImg img{
+    width: 500px;
+}
+
+
+/*footeer*/
+.footer {
+    width: 100%;
+    background-color: var(--menu-navbar); /* Color de fondo del footer */
+}
+
+.footerText {
+    padding: 10px;
+    text-align: center;
+    color: white; 
+    font-family: 'Bitter';
+}
+
+/*Media Queries*/
+@media (min-width: 926px) {
+    .academic {
+        flex-direction: column; /* Cambiar la dirección de flexión a columna */
+        align-items: center; /* Centrar los elementos verticalmente */
+    }
+
+    .sectionAcademic {
+        margin-top: 20px; /* Reducir el margen superior */
+    }
+
+    .formContacto {
+        flex-direction: column; /* Cambiar la dirección de flexión a columna */
+        align-items: center; /* Centrar los elementos verticalmente */
+    }
+
+    .formText {
+        width: 80%; /* Reducir el ancho del formulario */
+    }
+}
+.formImg img{
+    width: 300px;
+}
+@media screen and (min-width: 926px) {
+    .academic,
+    .skills,
+    .experience,
+    .formContacto {
+        height: auto; /* Altura automática para adaptarse al contenido */
+    }
+
+    .sectionAcademic,
+    .sectionSkillsLearning,
+    .experience__box,
+    .formContent {
+        margin-top: 20px; /* Reducir el margen superior */
+    }
+
+    .formText {
+        width: 90%; /* Reducir el ancho del formulario */
+    }
+}
+/*Tablet*/
+@media (max-width: 768px) {
+
+/* Menú */
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: var(--color-titulos);
+    }
+
+    .cerrar-menu {
+        color: var(--color-titulos);
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--menu-navbar);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+/* Estilos para pantallas más pequeñas */
+
+
+/* Estilos para pantallas más pequeñas aún */
+@media screen and (min-width: 768px) {
+    .academic,
+    .skills,
+    .experience,
+    .formContacto {
+        padding-bottom: 50px; /* Agregar un relleno inferior para separar del footer */
+    }
+
+    .sectionAcademic,
+    .sectionSkillsLearning,
+    .experience__box,
+    .formContent {
+        margin-top: 10px; /* Reducir aún más el margen superior */
+    }
+
+    .formText {
+        width: 95%; /* Reducir aún más el ancho del formulario */
+    }
+}
+
+/*Experiencia Profesional*/
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+/*Contacto*/
+.formImg img{
+    width: 250px;
+}
+/*Footer*/
+
+}
